@@ -4,11 +4,11 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public class CobaKoneksi {
+public class TesKoneksiPostgreSQL {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/belajar_jdbc";
-        String user = "root";
-        String password = "root";
+        String url = "jdbc:postgresql://localhost:5432/belajar_jdbc";
+        String user = "postgres";
+        String password = "postgres";
 
         try (Connection conn = DriverManager.getConnection(url, user, password)) {
             System.out.println("Koneksi berhasil.");
@@ -16,4 +16,5 @@ public class CobaKoneksi {
             System.err.println("Koneksi gagal: " + e.getMessage());
         }
     }
+
 }
