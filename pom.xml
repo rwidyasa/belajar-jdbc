@@ -1,8 +1,22 @@
 <project>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.contoh</groupId>
-    <artifactId>jdbc-belajar</artifactId>
+    <groupId>id.bukujava</groupId>
+    <artifactId>belajar-jdbc</artifactId>
     <version>1.0.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>crud</module>
+        <module>mvc</module>
+        <module>logger</module>
+        <module>testing</module>
+    </modules>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
+    </properties>
 
     <dependencies>
         <!-- MySQL JDBC Driver -->
@@ -19,6 +33,11 @@
             <version>42.7.7</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.zaxxer</groupId>
+            <artifactId>HikariCP</artifactId>
+            <version>5.1.0</version>
+        </dependency>
 
         <!-- Logging (opsional) -->
         <dependency>
