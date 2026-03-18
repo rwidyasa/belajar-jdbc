@@ -1,2 +1,2 @@
 # belajar-jdbc
-Belajar JDBC
+Belajar JDBC [https://bukujava.id/posts/jdbc/](https://bukujava.id/posts/jdbc/).
